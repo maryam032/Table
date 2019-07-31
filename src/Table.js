@@ -21,8 +21,6 @@ class Table extends React.Component{
         })
     }
     AddRecord=()=>{
-       
-       
         const addTemp = {enroll:this.state.enroll,
         name:this.state.name,
         contact:this.state.contact,
@@ -31,17 +29,12 @@ class Table extends React.Component{
         dataArray.push(addTemp)
         console.log(dataArray)
         this.setState({data:dataArray})
-        
-
     }
     onChangeHandler=(e)=>
     {
         this.setState({
             [e.target.name]:e.target.value
         })
-
-       
-   
     }
     render()
     {
