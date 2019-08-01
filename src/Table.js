@@ -1,11 +1,11 @@
 import React from 'react' 
 import './Table.css'
-
+import './Button.css'
 
 
 const dataArray = [
     {Enroll:'013',Name:'Maryam',Contact:'0307-3781740',Address:'F8/3,Islamabad',Semester:'5th'},
-    {Enroll:'028',Name:'Talha',Contact:'0307-3781740',Address:'F8/3,Islamabad',Semester:'5th'}
+    {Enroll:'028',Name:'Talha',Contact:'0313-3398450',Address:'E11/2,Islamabad',Semester:'5th'}
 ]
 
 class Table extends React.Component{
@@ -67,7 +67,7 @@ class Table extends React.Component{
                 <input style={{ fontSize:20,width:200,height:45,outline:'none',border:'1px solid #D3D3D3',paddingLeft:5,marginLeft:10}} type="text" name="Address" value={this.state.Address} placeholder="Address" onChange={e=>this.onChangeHandler(e)}/>
                 <input style={{ fontSize:20,width:160,height:45,outline:'none',border:'1px solid #D3D3D3',paddingLeft:5,marginLeft:10}}type="text" name="Semester" value={this.state.Semester} placeholder="Semester" onChange={e=>this.onChangeHandler(e)}/>
                 </div>
-                <input  style={{marginLeft:960,display:'block' ,marginTop:20,borderRadius:'3px',border:'none',outline:'none',width:170,height:50,backgroundColor:'#2E8B57',fontSize:20,color:'white'}} className="Button" type="button" value="Add Record" onClick={this.AddRecord}/>
+                <input  style={{marginLeft:960,marginTop:20,borderRadius:'3px',border:'none',outline:'none',width:170,height:50,fontSize:20,color:'white'}} className="Button" type="button" value="Add Record" onClick={this.AddRecord}/>
                <table className="Table">
                     <tr >
                         <th>Enrollment</th>

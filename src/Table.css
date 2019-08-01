@@ -33,9 +33,4 @@ td {
     height: 50px;
     outline: none;
   }
-  .Button{
-    margin-left: 960px;
-  }
-  .Button:hover{
-    background-color: #32CD32;
-}
+ 

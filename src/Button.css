@@ -1,3 +1,9 @@
+.Button{
+    outline: none;
+    background-color: #2E8B57;
+}
+
+
 .Button:hover{
     background-color: #32CD32;
 }
